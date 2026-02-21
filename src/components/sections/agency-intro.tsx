@@ -30,7 +30,7 @@ export function AgencyIntro() {
                     <AnimateIn direction="right" delay={0.3}>
                         <motion.div
                             className="mt-12 ml-auto max-w-sm rounded-2xl border border-slate-200/60 bg-white/80 p-6 shadow-xl shadow-slate-200/50 backdrop-blur-md md:absolute md:right-0 md:top-1/2 md:mt-0 md:-translate-y-1/3"
-                            whileHover={{ y: -4, shadow: "0 25px 50px -12px rgba(0, 0, 0, 0.12)" }}
+                            whileHover={{ y: -4, boxShadow: "0 25px 50px -12px rgba(0, 0, 0, 0.12)" }}
                             transition={{ type: "spring", stiffness: 300, damping: 30 }}
                         >
                             <div className="flex items-center justify-between">

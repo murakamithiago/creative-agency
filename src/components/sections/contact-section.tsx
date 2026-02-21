@@ -61,7 +61,7 @@ const fadeLeft = {
     visible: {
         opacity: 1,
         x: 0,
-        transition: { duration: 0.7, ease: [0.25, 0.1, 0.25, 1] },
+        transition: { duration: 0.7, ease: "easeOut" as const },
     },
 };
 
@@ -70,7 +70,7 @@ const fadeRight = {
     visible: {
         opacity: 1,
         x: 0,
-        transition: { duration: 0.7, delay: 0.15, ease: [0.25, 0.1, 0.25, 1] },
+        transition: { duration: 0.7, delay: 0.15, ease: [0.25, 0.1, 0.25, 1] as const },
     },
 };
 
@@ -79,7 +79,7 @@ const staggerUp = {
     visible: (i: number) => ({
         opacity: 1,
         y: 0,
-        transition: { duration: 0.5, delay: 0.5 + i * 0.1, ease: [0.25, 0.1, 0.25, 1] },
+        transition: { duration: 0.5, delay: 0.5 + i * 0.1, ease: [0.25, 0.1, 0.25, 1] as const },
     }),
 };
 
